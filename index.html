@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Todo List</title>
+   <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.1/base-min.css">
+   <link rel="stylesheet" href="site.css">
+   <script src="http://code.jquery.com/jquery-1.10.1.js"></script>
+   <script type="text/javascript" src="http://modernizr.com/downloads/modernizr-latest.js"></script>
+   <script type="text/javascript" src="http://underscorejs.org/underscore.js"></script>
+   <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/knockout/knockout-2.2.1.js"></script>
+   <script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+
+	<div>
+		<ul data-bind="foreach: todos">
+		    <li data-bind="text: $data" />
+		</ul>
+	</div>
+
+</body>
+</html>
